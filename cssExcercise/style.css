@@ -1,5 +1,10 @@
 p {
   color: blue;
+  font-family: Verdana;
+}
+p::first-letter {
+  font-size: 200%;
+  color: yellow;
 }
 #para1 {
   color: cornflowerblue;
@@ -17,4 +22,58 @@ section#assignment1 {
     radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-color: #282828;
   background-size: 16px 16px;
+}
+
+.invisibility {
+  visibility: hidden; /*this line make it disapper but still take place */
+}
+.hide {
+  display: none; /*this line make it disapper but still take place */
+}
+
+div#assign1 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* Assignment 2 */
+.hover:hover {
+  color: yellow;
+}
+.hover:active {
+  color: red;
+}
+.hover:visited {
+  color: wheat;
+}
+
+/* Assignment 3 */
+section #assignment3 {
+  font-size: 16px;
+}
+#assignment3 li {
+  font-size: 50%;
+}
+
+#assignment4 .square {
+  width: 50%;
+  background-color: red;
+}
+#assignment4 .square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#assignment5 .box {
+  border: 50px solid #e74c3c;
+  padding: 50px;
+  text-transform: uppercase;
+  width: 50%;
+}
+#assignment5 * {
+  box-sizing: border-box;
+}
+#assignment5 .content {
+  border-color: #16a085;
+  box-sizing: content-box;
 }
